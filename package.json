@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@cucumber/cucumber": "^10.1.0",
+    "dotenv": "^16.3.1",
+    "playwright": "^1.40.1",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "test": "cucumber-js test",
+    "allure:generate": "npx allure generate ./allure-results --clean",
+    "allure:open": "allure open allure-report",
+    "all": "npm test && npm run allure:generate && npm run allure:open"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.25.0",
+    "@playwright/test": "^1.40.1",
+    "allure-playwright": "^2.10.0"
+  }
+}
